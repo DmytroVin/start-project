@@ -40,8 +40,8 @@
   },
   "scripts": {
     "test": "grunt test",
-    "start":  " npm install -g grunt-cli && npm install -g bower && npm install  && bower install && grunt serve ",
-    "dist": "grunt serve:dist",
+    "start":  " npm install -g grunt-cli && npm install -g bower && npm install --global gifsicle && npm install  && bower install && cd app/ ",
+    "dist": "grunt serve",
     "postinstall": "bower install"
   }
 }
