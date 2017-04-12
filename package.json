@@ -5,8 +5,8 @@
     "type": "git",
     "url": "https://github.com/start-angular/sb-admin-angular"
   },
-  "dependencies": {},
-  "devDependencies": {
+
+  "dependencies": {
     "grunt": "^0.4.1",
     "grunt-autoprefixer": "^0.7.3",
     "grunt-concurrent": "^0.5.0",
@@ -40,7 +40,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "start": "grunt serve",
+    "start":  " npm install -g grunt-cli && npm install -g bower && npm install  && bower install && grunt serve ",
     "dist": "grunt serve:dist",
     "postinstall": "bower install"
   }
