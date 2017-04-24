@@ -16,6 +16,7 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Configurable paths for the application
+  grunt.loadNpmTasks('grunt-heroku');
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
@@ -26,6 +27,7 @@ module.exports = function (grunt) {
 
     // Project settings
     yeoman: appConfig,
+
 
     // Watches files for changes and runs tasks based on the changed files
     watch: {
@@ -63,13 +65,15 @@ module.exports = function (grunt) {
       }
     },
 
+    
+
     // The actual grunt server settings
     connect: {
       options: {
         port: process.env.PORT || 9000,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
-        livereload: 35729
+        livereload: 3000
       },
       livereload: {
         options: {
