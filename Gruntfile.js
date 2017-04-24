@@ -16,7 +16,8 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   // Configurable paths for the application
-  grunt.loadNpmTasks('grunt-heroku');
+ 
+
   var appConfig = {
     app: require('./bower.json').appPath || 'app',
     dist: 'dist'
